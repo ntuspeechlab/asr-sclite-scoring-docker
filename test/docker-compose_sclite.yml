@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+    score:
+        image: speechlab.azurecr.io/sclite-scoring-debian:1.0
+        #restart: unless-stopped
+        volumes:
+            - ./ref/:/workspace/ref
+            - ./hyp/:/workspace/hyp
+            - ./output:/workspace/output
+            - ./logs/:/workspace/logs
+            
+        #command: /workspace/score.sh "text"
+        command: /workspace/score.sh
+
+
+

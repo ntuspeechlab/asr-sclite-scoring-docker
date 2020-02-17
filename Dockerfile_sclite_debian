@@ -1,0 +1,42 @@
+FROM debian:9
+
+MAINTAINER Ly <tlvu@ntu.edu.sg>
+LABEL Description="Docker file for sclite - part of NIST Speech Recognition Scoring Toolkit (SCTK)"
+
+# set timezone
+ENV TZ Asia/Singapore
+
+# Add Tini
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
+
+RUN apt-get update && \
+    apt-get install -y autoconf automake bzip2 g++ git make swig gzip gawk && \
+    apt-get clean autoclean && \
+    apt-get autoremove -y
+
+WORKDIR /workspace
+
+# Download and compile SCTK tools
+RUN git clone https://github.com/usnistgov/SCTK.git && \
+    cd /workspace/SCTK/ && make config && make all && make check && make install && make doc && \
+    echo 'export PATH='"$(pwd)/bin"':$PATH' >> $HOME/.bashrc
+    
+RUN /bin/bash -c "source ~/.bashrc"
+
+# Configure the locales and encoding
+RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+    && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+
+COPY score.sh            /workspace/
+#COPY test/ref/ /workspace/reference/
+#COPY test/hyp/ /workspace/hypothesis/
+
+RUN  chmod +x /workspace/score.sh
+
+ENTRYPOINT ["/tini", "--"]
+
+
+

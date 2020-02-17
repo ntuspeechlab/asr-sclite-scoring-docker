@@ -1,0 +1,43 @@
+FROM alpine:3.8
+
+MAINTAINER Ly <tlvu@ntu.edu.sg>
+LABEL Description="NIST Speech Recognition Scoring Toolkit (SCTK)"
+
+
+# set timezone
+ENV TZ Asia/Singapore
+
+# Add Tini
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
+RUN apk add --update \
+    alpine-sdk \
+    git \
+    perl \
+    python \
+    python-dev \
+    py-pip \
+    build-base \
+    bash \
+  && pip install virtualenv \
+  && rm -rf /var/cache/apk/*
+  
+WORKDIR /workspace
+
+
+# Download and compile SCTK tools
+RUN git clone https://github.com/usnistgov/SCTK.git && \
+    cd /workspace/SCTK/ && make config && make all && make check && make install && make doc
+
+
+# Configure the locales and encoding
+#RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+#    && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+
+
+ENTRYPOINT ["/tini", "--"]
+
+
+
