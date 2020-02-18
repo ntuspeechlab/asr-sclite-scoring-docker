@@ -24,6 +24,9 @@ logDir=/workspace/logs
 notimefmt="text"
 scorefmt="stm"
 
+
+RANDOM=$$
+
 if [[ $# -eq 1 ]]; then
     echo "Number of parameters $#"
     scorefmt=$1
@@ -55,10 +58,28 @@ if [ "$scorefmt" = "$notimefmt" ]; then
 				continue
 			fi
 			
+			# Convert CRLF to LF (End-Of-Line from Dos to Unix/Linux)
+			dos2unix -ascii $ref_txt
+			
+			# Adding the place holder for speaker id "(speaker_"
+			sed -e 's/$/ \(speaker_/' -i $ref_txt
+			sed -e 's/$/ \(speaker_/' -i $hyp_txt
+			
+			# In case of multiple line, has to adding utterence id = line number)
+			awk '{print $0 NR ")"}' $ref_txt > ref_tmp && mv ref_tmp $ref_txt
+			awk '{print $0 NR ")"}' $hyp_txt > hyp_tmp && mv hyp_tmp $hyp_txt
+			
+			# Score
 			sclite -r $ref_txt -h $hyp_txt -i rm -o dtl prf >> $logDir/$base.txt
 			
-			mv $hypDir/"${base}".ctm.prf $outDir/
-			mv $hypDir/"${base}".ctm.dtl $outDir/
+			# Move the output to output dir
+			mv $hypDir/"${base}".txt.prf $outDir/
+			mv $hypDir/"${base}".txt.dtl $outDir/
+			
+			# Remove the speaker_utteranceId from the original text -> root owner (! Need to fix)
+			awk '{gsub("\\(speaker_[0-9]+\\)", "");print}' $ref_txt > ref_tmp && mv ref_tmp $ref_txt
+			awk '{gsub("\\(speaker_[0-9]+\\)", "");print}' $hyp_txt > hyp_tmp && mv hyp_tmp $hyp_txt
+			
 		done
 	done
 	

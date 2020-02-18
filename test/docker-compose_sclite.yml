@@ -9,8 +9,8 @@ services:
             - ./output:/workspace/output
             - ./logs/:/workspace/logs
             
-        #command: /workspace/score.sh "text"
-        command: /workspace/score.sh
+        command: /workspace/score.sh "text" # If you want to score in plain-text format
+        #command: /workspace/score.sh # If you want to score with time boundary format
 
 
 
