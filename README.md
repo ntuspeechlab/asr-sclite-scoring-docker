@@ -18,8 +18,8 @@ Command to use (get the docker-compose file in test/ folder)
 
 ## Testing
 To test this docker image, you should prepare the reference and hypotheses. Requirements for reference format and hypotheses are descibed below.
-While scoring the speech recognition system output in plain text format, we adding the dummy speaker id, in format of (speaker_<digits>).
-After scoring, this place holder will be removed, however, the owner of the file become root (Need to fix this issue!)
+
+While scoring the speech recognition system output in plain text format, we adding the dummy speaker id, in format of (speaker_<digits>). After scoring, this place holder will be removed, however, the owner of the file become root (Need to fix this issue!)
 
 You can follow the output in test/output/ folder for more details.
 
