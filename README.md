@@ -17,14 +17,27 @@ Command to use (get the docker-compose file in test/ folder)
 
 
 ## Testing
-To test this docker image, you should prepare the reference and hypotheses. Requirements for reference format and hypotheses are descibed below
+To test this docker image, you should prepare the reference and hypotheses. Requirements for reference format and hypotheses are descibed below.
+While scoring the speech recognition system output in plain text format, we adding the dummy speaker id, in format of (speaker_<digits>).
+After scoring, this place holder will be removed, however, the owner of the file become root (Need to fix this issue!)
+
+You can follow the output in test/output/ folder for more details.
+
+To choose between the time-boundary format vs plain-text format, you can pass the parameter in docker-compose file:
+
+    command: /workspace/score.sh "text" # If you want to score in plain-text format
+    command: /workspace/score.sh        # If you want to score with time boundary format
+
 
 ### References
+Reference file can be in STM or plain text format. Please checking the sample files in test/ref/ folder for more details. 
 
 ### Hypotheses
+Reference file can be in CTM or plain text format. Please checking the sample files in test/hyp/ folder for more details.
 
 
 ## Changes
+  - February 18, 2020: Fix bugs while scoring in plain-text format
   - February 17, 2020: Initial version
  
 
