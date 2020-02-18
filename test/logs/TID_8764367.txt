@@ -95,3 +95,33 @@ Begin alignment of Ref File: '/workspace/ref/TID_8764367.txt' and Hyp File: '/wo
     Writing string alignments to '/workspace/hyp/TID_8764367.txt.prf'
 
 Successful Completion
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: '/workspace/ref/TID_8764367.txt' and Hyp File: '/workspace/hyp/TID_8764367.txt'
+    Alignment# 1 for speaker speaker          
+
+    Writing scoring report to '/workspace/hyp/TID_8764367.txt.sys'
+    Writing overall detailed scoring report '/workspace/hyp/TID_8764367.txt.dtl'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.pra'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.prf'
+
+Successful Completion
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: '/workspace/ref/TID_8764367.txt' and Hyp File: '/workspace/hyp/TID_8764367.txt'
+    Alignment# 1 for speaker speaker          
+
+    Writing scoring report to '/workspace/hyp/TID_8764367.txt.sys'
+    Writing overall detailed scoring report '/workspace/hyp/TID_8764367.txt.dtl'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.pra'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.prf'
+
+Successful Completion
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: '/workspace/ref/TID_8764367.txt' and Hyp File: '/workspace/hyp/TID_8764367.txt'
+    Alignment# 1 for speaker speaker          
+
+    Writing scoring report to '/workspace/hyp/TID_8764367.txt.sys'
+    Writing overall detailed scoring report '/workspace/hyp/TID_8764367.txt.dtl'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.pra'
+    Writing string alignments to '/workspace/hyp/TID_8764367.txt.prf'
+
+Successful Completion

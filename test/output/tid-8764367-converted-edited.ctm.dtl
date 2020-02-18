@@ -1,0 +1,174 @@
+DETAILED OVERALL REPORT FOR THE SYSTEM: /workspace/hyp/tid-8764367-converted-edited.ctm
+
+SENTENCE RECOGNITION PERFORMANCE
+
+ sentences                                           7
+ with errors                             85.7%   (   6)
+
+   with substitions                      71.4%   (   5)
+   with deletions                        57.1%   (   4)
+   with insertions                       71.4%   (   5)
+
+
+WORD RECOGNITION PERFORMANCE
+
+Percent Total Error       =   50.0%   (  55)
+
+Percent Correct           =   69.1%   (  76)
+
+Percent Substitution      =   25.5%   (  28)
+Percent Deletions         =    5.5%   (   6)
+Percent Insertions        =   19.1%   (  21)
+Percent Word Accuracy     =   50.0%
+
+
+Ref. words                =           ( 110)
+Hyp. words                =           ( 125)
+Aligned words             =           ( 131)
+
+CONFUSION PAIRS                  Total                 (27)
+                                 With >=  1 occurrences (27)
+
+   1:    2  ->  ok ==> okay
+   2:    1  ->  an ==> ah
+   3:    1  ->  at ==> its
+   4:    1  ->  be ==> bar
+   5:    1  ->  buy ==> the
+   6:    1  ->  bye ==> bye-bye
+   7:    1  ->  bye ==> you
+   8:    1  ->  file ==> be
+   9:    1  ->  how ==> where
+  10:    1  ->  indicative ==> okay
+  11:    1  ->  is ==> jugular
+  12:    1  ->  much ==> our
+  13:    1  ->  on ==> guam
+  14:    1  ->  quickly ==> good
+  15:    1  ->  rate ==> okay
+  16:    1  ->  rate ==> wait
+  17:    1  ->  s ==> u.s.
+  18:    1  ->  selling ==> telling
+  19:    1  ->  spot ==> export
+  20:    1  ->  sterling ==> so
+  21:    1  ->  sterling ==> spot
+  22:    1  ->  thanks ==> thank
+  23:    1  ->  thereafter ==> after
+  24:    1  ->  this ==> days
+  25:    1  ->  valuing ==> devaluing
+  26:    1  ->  will ==> we'll
+  27:    1  ->  your ==> okay
+     -------
+        28
+
+
+
+INSERTIONS                       Total                 (20)
+                                 With >=  1 occurrences (20)
+
+   1:    2  ->  okay
+   2:    1  ->  and
+   3:    1  ->  are
+   4:    1  ->  at
+   5:    1  ->  be
+   6:    1  ->  bicycle
+   7:    1  ->  credit
+   8:    1  ->  five
+   9:    1  ->  further
+  10:    1  ->  if
+  11:    1  ->  indicate
+  12:    1  ->  just
+  13:    1  ->  lane
+  14:    1  ->  so
+  15:    1  ->  the
+  16:    1  ->  there
+  17:    1  ->  this
+  18:    1  ->  uh
+  19:    1  ->  wait
+  20:    1  ->  you'll
+     -------
+        21
+
+
+
+DELETIONS                        Total                 (6)
+                                 With >=  1 occurrences (6)
+
+   1:    1  ->  eight
+   2:    1  ->  go
+   3:    1  ->  is
+   4:    1  ->  u
+   5:    1  ->  we
+   6:    1  ->  yes
+     -------
+         6
+
+
+
+SUBSTITUTIONS                    Total                 (24)
+                                 With >=  1 occurrences (24)
+
+   1:    2  ->  bye
+   2:    2  ->  ok
+   3:    2  ->  rate
+   4:    2  ->  sterling
+   5:    1  ->  an
+   6:    1  ->  at
+   7:    1  ->  be
+   8:    1  ->  buy
+   9:    1  ->  file
+  10:    1  ->  how
+  11:    1  ->  indicative
+  12:    1  ->  is
+  13:    1  ->  much
+  14:    1  ->  on
+  15:    1  ->  quickly
+  16:    1  ->  s
+  17:    1  ->  selling
+  18:    1  ->  spot
+  19:    1  ->  thanks
+  20:    1  ->  thereafter
+  21:    1  ->  this
+  22:    1  ->  valuing
+  23:    1  ->  will
+  24:    1  ->  your
+     -------
+        28
+
+
+* NOTE: The 'Substitution' words are those reference words
+        for which the recognizer supplied an incorrect word.
+
+
+FALSELY RECOGNIZED               Total                 (24)
+                                 With >=  1 occurrences (24)
+
+   1:    5  ->  okay
+   2:    1  ->  after
+   3:    1  ->  ah
+   4:    1  ->  bar
+   5:    1  ->  be
+   6:    1  ->  bye-bye
+   7:    1  ->  days
+   8:    1  ->  devaluing
+   9:    1  ->  export
+  10:    1  ->  good
+  11:    1  ->  guam
+  12:    1  ->  its
+  13:    1  ->  jugular
+  14:    1  ->  our
+  15:    1  ->  so
+  16:    1  ->  spot
+  17:    1  ->  telling
+  18:    1  ->  thank
+  19:    1  ->  the
+  20:    1  ->  u.s.
+  21:    1  ->  wait
+  22:    1  ->  we'll
+  23:    1  ->  where
+  24:    1  ->  you
+     -------
+        28
+
+
+* NOTE: The 'Falsely Recognized' words are those hypothesis words
+        which the recognizer incorrectly substituted for a reference word.
+

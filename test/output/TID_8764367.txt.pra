@@ -1,20 +1,13 @@
-NIST_TEXT_ALIGNMENT
-VERSION 0.1
 
 
 		DUMP OF SYSTEM ALIGNMENT STRUCTURE
 
 System name:   /workspace/hyp/TID_8764367.txt
-Ref file:      /workspace/ref/TID_8764367.txt
-Hyp file:      /workspace/hyp/TID_8764367.txt
-Creation date: "Tue Feb 18 15:41:27 2020"
 
-Speaker Count: 1
 Speakers: 
     0:  speaker
 
-
-Speaker sentences   0:  speaker   utt# 0 of 1
+Speaker sentences   0:  speaker   #utts: 1
 id: (speaker_1)
 Scores: (#C #S #D #I) 43 41 4 39
 REF:  HELLO. GO    ON   QUICKLY. okay **** SURE. so will be selling all your US   dollar to ******* **** ** BUY STERLING. HOW   MUCH IS      YOUR STERLING? so the amount of * US dollar IS. YES. OKAY. so WE WILL  be SELLING AT  SPOT   RATE, let me **** give you *** ******** ** AN   INDICATIVE RATE. that will ** *** ***** *** **** **** *** **** ** ****** be 1.29515. OK   SURE. then *** ***** THEREAFTER we will be MAKING. then the balance STERLING, which is ***** ***** ******** ***** ******* *** *** ***** 43,710.88 this amount will go to * * * ****** *** **** ** UBS     LONDON. and so we will BE  VALUING   THIS on the ****** ****** ** 22      JAN    2019.    OK   THANKS BYE BYE.    

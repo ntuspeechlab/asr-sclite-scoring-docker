@@ -1,0 +1,10 @@
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: '/workspace/ref/tid-8764375-converted-edited.stm' and Hyp File: '/workspace/hyp/tid-8764375-converted-edited.ctm'
+    Performing alignments for file 'tid-8764375-converted-edited'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to '/workspace/hyp/tid-8764375-converted-edited.ctm.sys'
+    Writing overall detailed scoring report '/workspace/hyp/tid-8764375-converted-edited.ctm.dtl'
+    Writing string alignments to '/workspace/hyp/tid-8764375-converted-edited.ctm.pra'
+    Writing string alignments to '/workspace/hyp/tid-8764375-converted-edited.ctm.prf'
+
+Successful Completion

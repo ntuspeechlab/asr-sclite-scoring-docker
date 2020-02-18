@@ -70,11 +70,13 @@ if [ "$scorefmt" = "$notimefmt" ]; then
 			awk '{print $0 NR ")"}' $hyp_txt > hyp_tmp && mv hyp_tmp $hyp_txt
 			
 			# Score
-			sclite -r $ref_txt -h $hyp_txt -i rm -o dtl prf >> $logDir/$base.txt
+			sclite -r $ref_txt -h $hyp_txt -i rm -o pra sum dtl prf >> $logDir/$base.txt
 			
 			# Move the output to output dir
 			mv $hypDir/"${base}".txt.prf $outDir/
 			mv $hypDir/"${base}".txt.dtl $outDir/
+			mv $hypDir/"${base}".txt.sys $outDir/
+			mv $hypDir/"${base}".txt.pra $outDir/
 			
 			# Remove the speaker_utteranceId from the original text -> root owner (! Need to fix)
 			awk '{gsub("\\(speaker_[0-9]+\\)", "");print}' $ref_txt > ref_tmp && mv ref_tmp $ref_txt
@@ -100,9 +102,12 @@ else
 				continue
 			fi
 			
-			sclite -r $ref_stm stm -h $hyp_ctm ctm -o dtl prf >> $logDir/$base.txt
+			sclite -r $ref_stm stm -h $hyp_ctm ctm -o  pra sum dtl prf >> $logDir/$base.txt
+			
 			mv $hypDir/"${base}".ctm.prf $outDir/
 			mv $hypDir/"${base}".ctm.dtl $outDir/
+			mv $hypDir/"${base}".ctm.sys $outDir/
+			mv $hypDir/"${base}".ctm.pra $outDir/
 		done
 	done
 fi

@@ -1,0 +1,56 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   /workspace/hyp/tid-8764375-converted-edited.ctm
+
+Speakers: 
+    0:  channel1_s1
+
+Speaker sentences   0:  channel1_s1   #utts: 5
+id: (channel1_s1-000)
+Labels: <o,f0,male>
+File: tid-8764375-converted-edited
+Channel: 1
+Scores: (#C #S #D #I) 0 6 0 18
+REF:  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** HELLO 喂董事长您好， 喂董事长 是    您好， 我是。。。 
+HYP:  欢 迎 啊 等 一 下 喂 喂 永 乐 楼 为 董 事 长 的 谣 为 董   事                   长          ANYHOW 我       是             
+Eval: I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   S     S                     S            S      S         S               
+
+id: (channel1_s1-001)
+Labels: <o,f0,male>
+File: tid-8764375-converted-edited
+Channel: 1
+Scores: (#C #S #D #I) 0 2 0 20
+REF:  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** 我们今天有三笔的转款， 我先跟您确认第一笔呢是从。。 
+HYP:  我 们 今 天 有 钱 比 的 砖 块 我 先 跟 你 去 了 第 一 笔 呢 是                               从                                        
+Eval: I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   S                                 S                                          
+
+id: (channel1_s1-002)
+Labels: <o,f0,male>
+File: tid-8764375-converted-edited
+Channel: 1
+Scores: (#C #S #D #I) 4 12 0 60
+REF:  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** 给您汇美金六万四千七百七十二元点一毛八给这个 TAIWAN FIRE &   marine insurance CO. ltd *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** 的帐户。 帐户号码是01705105761然后这个是在 MEGA international ******** *** *** *** *** *** *** *** *** *** *** *** *** *** *** COMMERCIAL BANK. 可以进行对吧？可以 可以，好。第二笔呢是。。。 
+HYP:  年 龄 会 美 金 六 万 四 千 七 百 七 十 二 元 一 毛 吧 给 这 个 台 湾                                                                法    院  AND marine insurance CO  ltd 的 账 户 张 号 码 是 零 七 七 零 五 一 零 五 七 六 一 然 后 这 个 书 在          每                                          个  international COMMERCE 设 备 可 以 尽 情 的 吧 可 以 可 以 好 第 二        笔   呢                         是                                     
+Eval: I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   S                                                                  S      S    S                    S       I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   S            S                                            S                  I        I   I   I   I   I   I   I   I   I   I   I   I   I   I   S          S     S                           S                                       
+
+id: (channel1_s1-003)
+Labels: <o,f0,male>
+File: tid-8764375-converted-edited
+Channel: 1
+Scores: (#C #S #D #I) 0 6 0 12
+REF:  *** *** *** *** *** *** *** *** *** *** *** *** 对吧?对的, 可以，好 对，好。 然后最后一笔呢， 最后一笔呢 是美。。。 
+HYP:  对 吧 对 地 对 老 但 我 最 比 呢 最 后            一          笔          呢                      是             吗             
+Eval: I   I   I   I   I   I   I   I   I   I   I   I   S              S            S            S                        S               S               
+
+id: (channel1_s1-004)
+Labels: <o,f0,male>
+File: tid-8764375-converted-edited
+Channel: 1
+Scores: (#C #S #D #I) 0 5 0 7
+REF:  *** *** *** *** *** *** *** 是的 好的 可以，好 好的， 现在帮您进行 
+HYP:  自 责 好 烂 可 以 先 万    里    去          扫       货                
+Eval: I   I   I   I   I   I   I   S      S      S            S         S                  
+
+
